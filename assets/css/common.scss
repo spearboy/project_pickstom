@@ -5,12 +5,14 @@
     --fontN: "nanumSquareNeo";
     --fontK: "Kumar";
 }
+
 .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     background-color: var(--baseColor);
 }
+
 .section {
     position: relative;
     max-width: 1396px;
@@ -43,6 +45,7 @@
         background-color: var(--blackColor);
         transition: all 0.3s ease;
     }
+
     &::after {
         content: '';
         position: absolute;
@@ -53,16 +56,20 @@
         background-color: var(--blackColor);
         transition: all 0.3s ease;
     }
+
     &:hover {
         border: 3px solid var(--blackColor);
+
         &::after {
             right: calc(100% - 12px);
         }
+
         &::before {
             left: calc(100% - 12px);
         }
     }
 }
+
 .header {
     position: absolute;
     top: 0px;
@@ -72,20 +79,54 @@
     display: flex;
     justify-content: right;
     padding: 20px;
-    .manu {
+
+    .menu {
         position: relative;
         width: 30px;
         height: 20px;
-        
-        span{
+        cursor: pointer;
+
+        .line {
             border-top: 2px solid var(--blackColor);
             display: block;
             width: 30px;
             height: 10px;
+
+            &:first-child {
+                top: 0;
+                transform-origin: 25% 50%;
+                transition: 0.3s;
+            }
+
+            &:nth-child(2) {
+                top: calc(50% - 1px);
+            }
+
+            &:last-child {
+                bottom: 0;
+                transform-origin: 25% 50%;
+                transition: 0.3s;
+            }
+        }
+
+        &.open {
+            .line:first-child {
+                transform: rotate(45deg) translateX(10%);
+            }
+
+            .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            .line:last-child {
+                transform: rotate(-45deg) translateX(10%);
+            }
         }
     }
 
+
 }
+
 .footer {
     margin: 0px auto;
     width: 90%;
@@ -95,11 +136,13 @@
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--pointColor);
+
     p {
         font-size: 22px;
         color: var(--pointColor);
     }
 }
+
 @media (max-width:1396px) {
     .section {
         position: relative;
@@ -121,12 +164,14 @@
         font-size: 24px;
         cursor: pointer;
         transition: all 0.3s ease;
+
         &::before {
             bottom: -10px;
             left: -10px;
             width: 16px;
             height: 16px;
         }
+
         &::after {
             content: '';
             top: -10px;
@@ -134,11 +179,14 @@
             width: 16px;
             height: 16px;
         }
+
         &:hover {
             border: 3px solid var(--blackColor);
+
             &::after {
                 right: calc(100% - 10px);
             }
+
             &::before {
                 left: calc(100% - 10px);
             }

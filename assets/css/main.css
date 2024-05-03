@@ -37,7 +37,7 @@ body {
   position: absolute;
   top: 0px;
   right: 20px;
-  width: 810px;
+  width: 60%;
   height: 90vh;
   margin-left: -200px;
   background-color: var(--pointColor);
