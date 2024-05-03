@@ -59,8 +59,8 @@ $(document).ready(function () {
 
         // PassWord confirmation
         if ($('.pass').val() !== $('.passConfirm').val()) {
-            $('.passConfirm').siblings('.error').text('비밀번호가 일치하지 않습니다.').fadeIn().parent('.form-group').addClass('hasError');
-            passConfirm = false;
+            $('.passConfirm').siblings('.error').text('비밀번호가 / 일치하지 않습니다.').fadeIn().parent('.form-group').addClass('hasError');
+            passConfirm = true;
         } else {
             $('.passConfirm').siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
             passConfirm = false;
