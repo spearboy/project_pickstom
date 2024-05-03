@@ -2,6 +2,7 @@
   --pointColor: #E1E1E1;
   --baseColor: #FFFFFF;
   --blackColor: #2b2b2b;
+  --blackColor100: #d9d9d9;
   --fontN: "nanumSquareNeo";
   --fontK: "Kumar";
 }
@@ -36,6 +37,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .pickstom_btn::before {
   content: "";
   position: absolute;
@@ -46,6 +48,7 @@
   background-color: var(--blackColor);
   transition: all 0.3s ease;
 }
+
 .pickstom_btn::after {
   content: "";
   position: absolute;
@@ -56,12 +59,15 @@
   background-color: var(--blackColor);
   transition: all 0.3s ease;
 }
+
 .pickstom_btn:hover {
   border: 3px solid var(--blackColor);
 }
+
 .pickstom_btn:hover::after {
   right: calc(100% - 12px);
 }
+
 .pickstom_btn:hover::before {
   left: calc(100% - 12px);
 }
@@ -76,37 +82,45 @@
   justify-content: right;
   padding: 20px;
 }
+
 .header .menu {
   position: relative;
   width: 30px;
   height: 20px;
   cursor: pointer;
 }
+
 .header .menu .line {
   border-top: 2px solid var(--blackColor);
   display: block;
   width: 30px;
   height: 10px;
 }
+
 .header .menu .line:first-child {
   top: 0;
   transform-origin: 25% 50%;
   transition: 0.3s;
 }
+
 .header .menu .line:nth-child(2) {
   top: calc(50% - 1px);
 }
+
 .header .menu .line:last-child {
   bottom: 0;
   transform-origin: 25% 50%;
   transition: 0.3s;
 }
+
 .header .menu.open .line:first-child {
   transform: rotate(45deg) translateX(10%);
 }
+
 .header .menu.open .line:nth-child(2) {
   opacity: 0;
 }
+
 .header .menu.open .line:last-child {
   transform: rotate(-45deg) translateX(10%);
 }
@@ -121,6 +135,7 @@
   justify-content: center;
   border-top: 1px solid var(--pointColor);
 }
+
 .footer p {
   font-size: 22px;
   color: var(--pointColor);
@@ -133,6 +148,7 @@
     padding: 30px 20px 30px;
     margin: 0px auto;
   }
+
   .pickstom_btn {
     position: relative;
     width: -moz-fit-content;
@@ -148,12 +164,14 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
+
   .pickstom_btn::before {
     bottom: -10px;
     left: -10px;
     width: 16px;
     height: 16px;
   }
+
   .pickstom_btn::after {
     content: "";
     top: -10px;
@@ -161,13 +179,18 @@
     width: 16px;
     height: 16px;
   }
+
   .pickstom_btn:hover {
     border: 3px solid var(--blackColor);
   }
+
   .pickstom_btn:hover::after {
     right: calc(100% - 10px);
   }
+
   .pickstom_btn:hover::before {
     left: calc(100% - 10px);
   }
-}/*# sourceMappingURL=common.css.map */
+}
+
+/*# sourceMappingURL=common.css.map */
