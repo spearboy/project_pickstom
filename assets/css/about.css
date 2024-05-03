@@ -1,0 +1,30 @@
+body {
+  background-color: var(--pointColor);
+  padding: 0px 100px 100px 100px;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--pointColor);
+}
+
+#header {
+  height: 80px;
+  background-color: var(--pointColor);
+}
+
+#main {
+  width: 1260px;
+  height: 850px;
+  background-color: var(--pointColor);
+}
+#main .container {
+  width: 1520px;
+  height: 850px;
+  background-color: var(--blackColor);
+  border-radius: 50px;
+  background-image: url(../images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=about.css.map */
