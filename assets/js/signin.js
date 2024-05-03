@@ -1,3 +1,4 @@
+/*global $, document, window, setTimeout, navigator, console, location*/
 $(document).ready(function () {
 
     'use strict';
@@ -24,7 +25,10 @@ $(document).ready(function () {
         // User Name
         if ($(this).hasClass('name')) {
             if ($(this).val().length === 0) {
-                $(this).siblings('span.error').text('이름을 입력해주세요.').fadeIn().parent('.form-group').addClass('hasError');
+                $(this).siblings('span.error').text('이름을 입력해 주세요!').fadeIn().parent('.form-group').addClass('hasError');
+                usernameError = true;
+            } else if ($(this).val().length > 0 && $(this).val().length < 2) {
+                $(this).siblings('span.error').text('두글자 이상 입력해주세요!').fadeIn().parent('.form-group').addClass('hasError');
                 usernameError = true;
             } else {
                 $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
@@ -34,7 +38,7 @@ $(document).ready(function () {
         // Email
         if ($(this).hasClass('email')) {
             if ($(this).val().length == '') {
-                $(this).siblings('span.error').text('이메일 주소를 입력해주세요.').fadeIn().parent('.form-group').addClass('hasError');
+                $(this).siblings('span.error').text('이메일을 입력해 주세요!').fadeIn().parent('.form-group').addClass('hasError');
                 emailError = true;
             } else {
                 $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
@@ -45,7 +49,7 @@ $(document).ready(function () {
         // PassWord
         if ($(this).hasClass('pass')) {
             if ($(this).val().length < 8) {
-                $(this).siblings('span.error').text('8자 이상 입력하세요.').fadeIn().parent('.form-group').addClass('hasError');
+                $(this).siblings('span.error').text('8글자 이상 입력해주세요!').fadeIn().parent('.form-group').addClass('hasError');
                 passwordError = true;
             } else {
                 $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
@@ -55,7 +59,7 @@ $(document).ready(function () {
 
         // PassWord confirmation
         if ($('.pass').val() !== $('.passConfirm').val()) {
-            $('.passConfirm').siblings('.error').text('패스워드가 \ 일치하지않습니다').fadeIn().parent('.form-group').addClass('hasError');
+            $('.passConfirm').siblings('.error').text('비밀번호가 일치하지 않습니다.').fadeIn().parent('.form-group').addClass('hasError');
             passConfirm = false;
         } else {
             $('.passConfirm').siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
