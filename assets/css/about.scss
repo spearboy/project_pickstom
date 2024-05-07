@@ -5,16 +5,6 @@ body {
     padding: 0px 100px 100px 100px;
 }
 
-#header {
-    width: 100%;
-    height: 80px;
-    background-color: var(--pointColor);
-
-    p {
-        font-size: 150px;
-    }
-}
-
 #wrap {
     width: 100%;
     height: 100%;
@@ -24,7 +14,15 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
 
+    #header {
+        height: 80px;
+        background-color: var(--pointColor);
+        display: inline-block;
 
+        a {
+            font-size: 150px;
+        }
+    }
 
     #main {
         width: 100%;
