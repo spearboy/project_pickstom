@@ -1,3 +1,4 @@
+@import url(./reset.css);
 body {
   width: 100%;
   height: 100vh;
@@ -15,8 +16,46 @@ body {
   justify-content: flex-start;
 }
 #wrap #header {
-  height: 80px;
+  width: 100%;
+  min-height: 80px;
   background-color: var(--pointColor);
+  display: inline-block;
+  position: relative;
+}
+#wrap #header .menu {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 40px;
+}
+#wrap #header .menu .line {
+  border-top: 2px solid var(--blackColor);
+  display: block;
+  width: 30px;
+  height: 10px;
+  margin-left: auto;
+}
+#wrap #header .menu .line:first-child {
+  top: 0;
+  transform-origin: 25% 50%;
+  transition: 0.3s;
+}
+#wrap #header .menu .line:nth-child(2) {
+  top: calc(50% - 1px);
+}
+#wrap #header .menu .line:last-child {
+  bottom: 0;
+  transform-origin: 25% 50%;
+  transition: 0.3s;
+}
+#wrap #header .menu.open .line:first-child {
+  transform: rotate(45deg) translateX(10%);
+}
+#wrap #header .menu.open .line:nth-child(2) {
+  opacity: 0;
+}
+#wrap #header .menu.open .line:last-child {
+  transform: rotate(-45deg) translateX(32%);
 }
 #wrap #main {
   width: 100%;
