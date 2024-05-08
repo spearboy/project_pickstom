@@ -77,15 +77,22 @@ $(document).ready(function () {
 
     // form switch
     $('a.switch').click(function (e) {
-        $(this).toggleClass('active');
         e.preventDefault();
+        var formPiece = $(this).parents('.form-peice');
 
-        if ($('a.switch').hasClass('active')) {
-            $(this).parents('.form-peice').addClass('switched').siblings('.form-peice').removeClass('switched');
-        } else {
-            $(this).parents('.form-peice').removeClass('switched').siblings('.form-peice').addClass('switched');
+        // Reset error messages
+        formPiece.find('.error').text('').fadeOut();
+        formPiece.find('.form-group').removeClass('hasError');
+
+        // Switch forms
+        if (!$(this).hasClass('active')) {
+            $('a.switch').removeClass('active');
+            $(this).addClass('active');
+            formPiece.siblings('.form-peice').removeClass('switched');
+            formPiece.addClass('switched');
         }
     });
+
 
 
     // Form submit
