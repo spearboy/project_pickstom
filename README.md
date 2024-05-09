@@ -32,3 +32,4 @@
 
 ## 팀 작업 스프린트
 
+![IMG_8571](https://github.com/spearboy/project_pickstom/assets/95023009/613d5efa-ac3f-4470-8030-b71d98f0f038)
