@@ -9,27 +9,4 @@
 
 body {
   background-color: var(--baseColor);
-}
-
-@media (max-width: 1396px) {
-  body {
-    background-color: var(--pointColor);
-    padding: 10px;
-  }
-  .section-hero {
-    padding: 30px 20px 30px;
-    height: auto;
-  }
-  .section-hero .design_element {
-    display: none;
-  }
-  .section-list .list_wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  .section-list .list_wrapper .list_box {
-    width: calc(50% - 10px);
-    height: 130px;
-  }
 }/*# sourceMappingURL=main.css.map */
