@@ -96,22 +96,77 @@ $(document).ready(function () {
 
 
     // Form submit
-    $('form.signup-form').submit(function (event) {
+    $('form.login-form').submit(function(event) {
         event.preventDefault();
+    
+        if ($('#loginemail').val() != "" || $('#loginPassword').val() != "") {
 
+            // Form data
+            var formData = $(this).serialize(); // Serialize form data
+
+            $.ajax({
+                type: 'POST',
+                url: '../../util/signin_work.php', // PHP 파일 경로
+                data: formData,
+                dataType: "json",
+                success: function(data){
+                    console.log(data.result)
+                    if(data.result == "good") {
+                        window.location.href="../../index.php";
+                    } else {
+                        alert('이메일 혹은 비밀번호를 확인해주세요.');
+                    }
+                }
+            });
+        }
+    });
+    // Form submit
+    $('form.signup-form').submit(function(event) {
+        event.preventDefault();
+    
         if (usernameError == true || emailError == true || passwordError == true || passConfirm == true) {
             $('.name, .email, .pass, .passConfirm').blur();
         } else {
-            $('.signup, .login').addClass('switched');
+            // Form data
+            var formData = $(this).serialize(); // Serialize form data
+    
+            // Send form data to server
 
-            setTimeout(function () { $('.signup, .login').hide(); }, 700);
-            setTimeout(function () { $('.brand').addClass('active'); }, 300);
-            setTimeout(function () { $('.heading').addClass('active'); }, 600);
-            setTimeout(function () { $('.success-msg p').addClass('active'); }, 900);
-            setTimeout(function () { $('.success-msg a').addClass('active'); }, 1050);
-            setTimeout(function () { $('.form').hide(); }, 700);
+            let email = $("#email").val();
+            $.ajax({
+                type: 'POST',
+                url: '../../util/signup_work.php', // PHP 파일 경로
+                data: formData,
+                dataType: "json",
+                success: function(data){
+                    if(data.result == "good") {
+                        $('.signup, .login').addClass('switched');
+                        setTimeout(function() {
+                            $('.signup, .login').hide();
+                        }, 700);
+                        setTimeout(function() {
+                            $('.brand').addClass('active');
+                        }, 300);
+                        setTimeout(function() {
+                            $('.heading').addClass('active');
+                        }, 600);
+                        setTimeout(function() {
+                            $('.success-msg p').addClass('active');
+                        }, 900);
+                        setTimeout(function() {
+                            $('.success-msg a').addClass('active');
+                        }, 1050);
+                        setTimeout(function() {
+                            $('.form').hide();
+                        }, 700);
+                    } else {
+                        alert('이');
+                    }
+                }
+            });
         }
     });
+    
 
     // Reload page
     $('a.profile').on('click', function () {

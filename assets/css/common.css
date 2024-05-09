@@ -1,243 +1,129 @@
-@charset "UTF-8";
 @import url(./reset.css);
+
 :root {
-  --pointColor: #D6E0E2;
-  --baseColor: #FDFCF7;
-  --whiteColor: #ffffff;
+  --pointColor: #E1E1E1;
+  --baseColor: #FFFFFF;
   --blackColor: #2b2b2b;
-  --lineColor: #686866;
   --fontN: "nanumSquareNeo";
   --fontK: "Kumar";
 }
 
-.section {
+.wrapper {
+  position: relative;
   width: 100%;
-  height: 1000px;
-  border-bottom: 3px solid var(--lineColor);
-  display: flex;
-}
-.section .section1 {
-  width: 60%;
   height: 100%;
-  border-right: 3px solid var(--lineColor);
-}
-.section .section1 .section1-1,
-.section .section1 .section1-2,
-.section .section1 .section1-3 {
-  width: 100%;
-  height: 25%;
-  position: relative;
-  border-bottom: 3px solid var(--lineColor);
-}
-.section .section1 .section1-1 p,
-.section .section1 .section1-2 p,
-.section .section1 .section1-3 p {
-  font-size: 160px;
-  position: absolute;
-  bottom: 14px;
-  left: 20px;
-  right: 0px;
-  letter-spacing: -4px;
-}
-.section .section1 .section1-4 {
-  width: 100%;
-  height: 25%;
-  position: relative;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: 50px;
-}
-.section .section1 .section1-4 .btn {
-  width: 290px;
-  height: 60px;
-  border: 3px solid var(--lineColor);
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 60px;
-  position: relative;
-  cursor: pointer;
-  background-color: var(--pointColor);
-  font-weight: 800;
-}
-.section .section1 .section1-4 .btn:before {
-  position: absolute;
-}
-.section .section2 {
-  width: 40%;
-  height: 100%;
-  background-image: url("../images/main_img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--baseColor);
 }
 
-.banner {
-  width: 100%;
-  height: 150px;
-  background-color: var(--pointColor);
-  border: 3px solid var(--lineColor);
-  margin-top: -3px;
+.section {
   position: relative;
+  max-width: 1396px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 0px 100px;
+}
+
+.pickstom_btn {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 75px;
+  border: 3px dashed #000;
   display: flex;
-  justify-content: left;
+  flex-direction: row;
   align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
+  justify-content: center;
+  padding: 0px 40px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.banner .scroll-text {
-  display: inline-block;
-  animation: scroll-left 80s linear infinite;
-  font-size: 40px;
+
+.pickstom_btn::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: -12px;
+  width: 26px;
+  height: 26px;
+  background-color: var(--blackColor);
+  transition: all 0.3s ease;
 }
-@keyframes scroll-left {
-  from {
-    margin-left: 0px;
-  }
-  to {
-    margin-left: -2454px;
-  }
+
+.pickstom_btn::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 26px;
+  height: 26px;
+  background-color: var(--blackColor);
+  transition: all 0.3s ease;
+}
+
+.pickstom_btn:hover {
+  border: 3px solid var(--blackColor);
+}
+
+.pickstom_btn:hover::after {
+  right: calc(100% - 12px);
+}
+
+.pickstom_btn:hover::before {
+  left: calc(100% - 12px);
 }
 
 .header {
-  position: sticky;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: right;
   padding: 20px;
-  border-bottom: 3px solid var(--lineColor);
-  background-color: var(--baseColor);
 }
-.header p {
-  font-size: 30px;
-  margin-right: auto;
-  font-family: var(--fontN);
-  font-weight: 800;
-  color: var(--lineColor);
-}
+
 .header .menu {
-  margin-left: auto;
   position: relative;
   width: 30px;
   height: 20px;
   cursor: pointer;
 }
+
 .header .menu .line {
-  border-top: 4px solid var(--blackColor);
+  border-top: 2px solid var(--blackColor);
   display: block;
   width: 30px;
   height: 10px;
 }
+
 .header .menu .line:first-child {
   top: 0;
   transform-origin: 25% 50%;
   transition: 0.3s;
 }
+
 .header .menu .line:nth-child(2) {
   top: calc(50% - 1px);
 }
+
 .header .menu .line:last-child {
   bottom: 0;
   transform-origin: 25% 50%;
   transition: 0.3s;
 }
+
 .header .menu.open .line:first-child {
   transform: rotate(45deg) translateX(10%);
 }
+
 .header .menu.open .line:nth-child(2) {
   opacity: 0;
 }
+
 .header .menu.open .line:last-child {
   transform: rotate(-45deg) translateX(32%);
-}
-
-.contents {
-  width: 100%;
-  height: 800px;
-  display: flex;
-}
-.contents .content1,
-.contents .content2,
-.contents .content3 {
-  height: 100%;
-  border: 3px solid var(--lineColor);
-  margin-top: -3px;
-  box-sizing: border-box;
-  width: calc(33.333% + 3px);
-  margin-left: -3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contents .content1 a,
-.contents .content2 a,
-.contents .content3 a {
-  text-decoration: none;
-}
-.contents .content1:first-child,
-.contents .content2:first-child,
-.contents .content3:first-child {
-  margin-left: 0;
-}
-.contents .content1 .box,
-.contents .content2 .box,
-.contents .content3 .box {
-  width: 410px;
-  height: 560px;
-  filter: grayscale(100%);
-  /* 기본 상태에서는 흑백 */
-  transition: filter 0.3s ease;
-  /* 부드러운 효과 전환 */
-  display: flex;
-  justify-content: center;
-}
-.contents .content1 .box p,
-.contents .content2 .box p,
-.contents .content3 .box p {
-  font-size: 60px;
-  color: var(--whiteColor);
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 40px;
-}
-.contents .content1 .box:hover,
-.contents .content2 .box:hover,
-.contents .content3 .box:hover {
-  filter: grayscale(0);
-}
-.contents .content1 .about,
-.contents .content2 .about,
-.contents .content3 .about {
-  background-image: url("../images/cot-img01.png");
-}
-.contents .content1 .custom,
-.contents .content2 .custom,
-.contents .content3 .custom {
-  background-image: url("../images/cot-img02.png");
-}
-.contents .content1 .notice,
-.contents .content2 .notice,
-.contents .content3 .notice {
-  background-image: url("../images/cot-img03.png");
-}
-
-.contents2 {
-  width: 100%;
-  height: 1000px;
-  border: 3px solid var(--lineColor);
-  margin-top: -6px;
-  display: flex;
-}
-.contents2 p {
-  font-size: 200px;
-  text-align: left;
 }
 
 .footer {
@@ -250,9 +136,10 @@
   justify-content: center;
   border-top: 1px solid var(--pointColor);
 }
+
 .footer p {
   font-size: 22px;
-  color: var(--lineColor);
+  color: var(--pointColor);
 }
 
 @media (max-width: 1396px) {
@@ -262,6 +149,7 @@
     padding: 30px 20px 30px;
     margin: 0px auto;
   }
+
   .pickstom_btn {
     position: relative;
     width: -moz-fit-content;
@@ -277,12 +165,14 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
+
   .pickstom_btn::before {
     bottom: -10px;
     left: -10px;
     width: 16px;
     height: 16px;
   }
+
   .pickstom_btn::after {
     content: "";
     top: -10px;
@@ -290,13 +180,18 @@
     width: 16px;
     height: 16px;
   }
+
   .pickstom_btn:hover {
     border: 3px solid var(--blackColor);
   }
+
   .pickstom_btn:hover::after {
     right: calc(100% - 10px);
   }
+
   .pickstom_btn:hover::before {
     left: calc(100% - 10px);
   }
-}/*# sourceMappingURL=common.css.map */
+}
+
+/*# sourceMappingURL=common.css.map */

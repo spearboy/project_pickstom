@@ -18,7 +18,7 @@
 
                 <!-- Brand Box -->
                 <div class="col-sm-6 brand">
-                    <a href="#" class="logo"><span></span></a>
+                    <a href="./index.php" class="logo"><span></span></a>
 
                     <div class="heading">
                         <h2>Pickstom</h2>
@@ -27,7 +27,7 @@
 
                     <div class="success-msg">
                         <p>이제 커스텀을 시작해보세요!</p>
-                        <a href="#" class="profile">Custom Start</a>
+                        <a href="./index.php" class="profile">Custom Start</a>
                     </div>
                 </div>
 
@@ -61,31 +61,31 @@
                         <form class="signup-form" action="#" method="post">
 
                             <div class="form-group">
-                                <label for="name">이름</label>
-                                <input type="text" name="username" id="name" class="name">
+                                <label for="name">이름(필수)</label>
+                                <input type="text" name="username" id="name" class="name" required autocomplete="off">
                                 <span class="error"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">이메일주소</label>
-                                <input type="email" name="emailAdress" id="email" class="email">
+                                <label for="email">이메일주소(필수)</label>
+                                <input type="email" name="emailAdress" id="email" class="email" required autocomplete="off">
                                 <span class="error"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="phone">연락처</label>
-                                <input type="text" name="phone" id="phone">
+                                <label for="phone">연락처(필수)</label>
+                                <input type="text" name="phone" id="phone" required autocomplete="off">
                             </div>
 
                             <div class="form-group">
-                                <label for="password">비밀번호</label>
-                                <input type="password" name="password" id="password" class="pass">
+                                <label for="password">비밀번호(필수)</label>
+                                <input type="password" name="password" id="password" class="pass" required autocomplete="off">
                                 <span class="error"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="passwordCon">비밀번호확인</label>
-                                <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                                <label for="passwordCon">비밀번호확인(필수)</label>
+                                <input type="password" name="passwordCon" id="passwordCon" class="passConfirm" required autocomplete="off">
                                 <span class="error"></span>
                             </div>
 
