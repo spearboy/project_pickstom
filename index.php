@@ -32,6 +32,17 @@
             <li><a href="/">home</a></li>
             <li><a href="./about.html">about</a></li>
             <li><a href="#">notice</a></li>
+            <?
+                if(!isset($_SESSION['userEmail'])){
+            ?>
+            <li><a href="./signin.html">login</a></li>
+            <?
+                }else {
+            ?>
+                <li><a href="./util/signout_work.php">logout</a></li>
+            <?
+                }
+            ?>
         </ul>
     </div>
 <?

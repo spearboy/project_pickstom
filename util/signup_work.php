@@ -3,10 +3,10 @@
     include "./connect.php";
     include "./session.php";
 
-    $name = $_POST['username'];
-    $email = $_POST['emailAdress'];
-    $phone = $_POST['phone'];
-    $password = $_POST['password'];
+    $name = mysqli_real_escape_string($connect, $_POST['username']);
+    $email = mysqli_real_escape_string($connect, $_POST['emailAdress']);
+    $phone = mysqli_real_escape_string($connect, $_POST['phone']);
+    $password = mysqli_real_escape_string($connect, $_POST['password']);
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 
