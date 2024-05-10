@@ -3,103 +3,203 @@
     font-weight: 300;
     font-style: normal;
     src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-aLt.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-aLt.woff") format("woff2"),
-         url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-aLt.woff2") format("woff"),
-         url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-aLt.ttf") format("truetype");
+        url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-aLt.woff") format("woff2"),
+        url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-aLt.woff2") format("woff"),
+        url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-aLt.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 400;
     font-style: normal;
     src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-bRg.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-bRg.woff2") format("woff2"),
-         url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-bRg.woff") format("woff"),
-         url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-bRg.ttf") format("truetype");
+        url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-bRg.woff2") format("woff2"),
+        url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-bRg.woff") format("woff"),
+        url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-bRg.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 700;
     font-style: normal;
     src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-cBd.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-cBd.woff2") format("woff2"),
-         url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-cBd.woff") format("woff"),
-         url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-cBd.ttf") format("truetype");
+        url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-cBd.woff2") format("woff2"),
+        url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-cBd.woff") format("woff"),
+        url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-cBd.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 800;
     font-style: normal;
     src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-dEb.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-dEb.woff2") format("woff2"),
-         url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-dEb.woff") format("woff"),
-         url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-dEb.ttf") format("truetype");
+        url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-dEb.woff2") format("woff2"),
+        url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-dEb.woff") format("woff"),
+        url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-dEb.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 900;
     font-style: normal;
     src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-eHv.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-eHv.woff2") format("woff2"),
-         url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-eHv.woff") format("woff"),
-         url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-eHv.ttf") format("truetype");
+        url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-eHv.woff2") format("woff2"),
+        url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-eHv.woff") format("woff"),
+        url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-eHv.ttf") format("truetype");
     font-display: swap;
 }
+
 @font-face {
     font-family: "Kumar";
     font-weight: 400;
     font-style: normal;
     src: url("../fonts/kumar-one/web/WOFF2/KumarOne-Regular.woff2") format("woff2"),
-         url("../fonts/kumar-one/web/WOFF/KumarOne-Regular.woff") format("woff"),
-         url("../fonts/kumar-one/KumarOne-Regular.ttf") format("truetype");
+        url("../fonts/kumar-one/web/WOFF/KumarOne-Regular.woff") format("woff"),
+        url("../fonts/kumar-one/KumarOne-Regular.ttf") format("truetype");
     font-display: swap;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@font-face {
+    font-family: "BebasNeue";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/BebasNeue/web/WOFF/BebasNeue-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     box-sizing: border-box;
     font-family: "nanumSquareNeo";
     font-weight: 400;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }

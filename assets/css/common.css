@@ -8,6 +8,7 @@
   --lineColor: #686866;
   --fontN: "nanumSquareNeo";
   --fontK: "Kumar";
+  --fontB: "BebasNeue";
 }
 
 .section {
@@ -32,12 +33,13 @@
 .section .section1 .section1-1 p,
 .section .section1 .section1-2 p,
 .section .section1 .section1-3 p {
-  font-size: 110px;
+  font-size: 160px;
   position: absolute;
   bottom: 14px;
   left: 20px;
   right: 0px;
   letter-spacing: -4px;
+  font-family: var(--fontB);
 }
 .section .section1 .section1-4 {
   width: 100%;
@@ -108,12 +110,14 @@
   left: 0px;
   z-index: 1;
   width: 100%;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 20px;
   border-bottom: 3px solid var(--lineColor);
   background-color: var(--baseColor);
+  z-index: 11;
 }
 .header p {
   font-size: 30px;
@@ -156,6 +160,50 @@
 }
 .header .menu.open .line:last-child {
   transform: rotate(-45deg) translateX(32%);
+}
+
+.slidemenu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--baseColor);
+  top: 0;
+  right: -300px;
+  border-left: 3px solid var(--lineColor);
+  z-index: 10;
+  padding: 122px 30px 30px 30px;
+  transition: all 0.3s ease;
+}
+.slidemenu.open {
+  right: 0;
+}
+.slidemenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 20px;
+}
+.slidemenu ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 30px;
+  font-family: var(--fontB);
+  cursor: pointer;
+  position: relative;
+}
+.slidemenu ul li a::after {
+  content: "";
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-top: 2px solid var(--lineColor);
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+.slidemenu ul li a:hover::after {
+  width: 100%;
 }
 
 .contents {
@@ -230,14 +278,26 @@
 
 .contents2 {
   width: 100%;
-  height: 1000px;
+  height: 800px;
   border: 3px solid var(--lineColor);
   margin-top: -6px;
   display: flex;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .contents2 p {
-  font-size: 200px;
-  text-align: left;
+  font-size: 80px;
+}
+.contents2 .container1 {
+  width: 1200px;
+  height: 640px;
+  background-color: var(--whiteColor);
+  border: 3px solid var(--lineColor);
+  margin-top: 50px;
+  border-radius: 50px;
 }
 
 .footer {
