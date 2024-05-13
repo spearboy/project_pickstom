@@ -1,51 +1,56 @@
 @font-face {
-  font-family: "nanumSquareNeo";
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Pretendard/woff2/Pretendard-Thin.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Pretendard/woff2/Pretendard-ExtraLight.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
   font-weight: 300;
   font-style: normal;
-  src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-aLt.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-aLt.woff") format("woff2"), url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-aLt.woff2") format("woff"), url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-aLt.ttf") format("truetype");
-  font-display: swap;
+  src: url("../fonts/Pretendard/woff2/Pretendard-Light.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-Light.woff") format("woff");
 }
 @font-face {
-  font-family: "nanumSquareNeo";
+  font-family: "Pretendard";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-bRg.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-bRg.woff2") format("woff2"), url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-bRg.woff") format("woff"), url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-bRg.ttf") format("truetype");
-  font-display: swap;
+  src: url("../fonts/Pretendard/woff2/Pretendard-Regular.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: "nanumSquareNeo";
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Pretendard/woff2/Pretendard-Medium.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Pretendard/woff2/Pretendard-SemiBold.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-cBd.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-cBd.woff2") format("woff2"), url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-cBd.woff") format("woff"), url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-cBd.ttf") format("truetype");
-  font-display: swap;
+  src: url("../fonts/Pretendard/woff2/Pretendard-Bold.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "nanumSquareNeo";
+  font-family: "Pretendard";
   font-weight: 800;
   font-style: normal;
-  src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-dEb.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-dEb.woff2") format("woff2"), url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-dEb.woff") format("woff"), url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-dEb.ttf") format("truetype");
-  font-display: swap;
+  src: url("../fonts/Pretendard/woff2/Pretendard-ExtraBold.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-ExtraBold.woff") format("woff");
 }
 @font-face {
-  font-family: "nanumSquareNeo";
+  font-family: "Pretendard";
   font-weight: 900;
   font-style: normal;
-  src: url("../fonts/NanumSquareNeo/web/eot/NanumSquareNeoTTF-eHv.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareNeo/web/woff2/NanumSquareNeoTTF-eHv.woff2") format("woff2"), url("../fonts/NanumSquareNeo/web/woff/NanumSquareNeoTTF-eHv.woff") format("woff"), url("../fonts/NanumSquareNeo/TTF/NanumSquareNeo-eHv.ttf") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Kumar";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/kumar-one/web/WOFF2/KumarOne-Regular.woff2") format("woff2"), url("../fonts/kumar-one/web/WOFF/KumarOne-Regular.woff") format("woff"), url("../fonts/kumar-one/KumarOne-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "BebasNeue";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/web/WOFF/BebasNeue-Regular.woff") format("woff");
-  font-display: swap;
+  src: url("../fonts/Pretendard/woff2/Pretendard-Black.woff2") format("woff2"), url("../fonts/Pretendard/woff/Pretendard-Black.woff") format("woff");
 }
 html,
 body,
@@ -135,7 +140,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  font-family: "nanumSquareNeo";
+  font-family: "Pretendard";
   font-weight: 400;
 }
 
