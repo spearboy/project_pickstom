@@ -1,13 +1,5 @@
 @import url('./common.css');
 
-:root {
-    --pointColor: #D6E0E2;
-    --baseColor: #FDFCF7;
-    --blackColor: #2b2b2b;
-    --fontN: "nanumSquareNeo";
-    --fontK: "Kumar";
-}
-
 body {
     background-color: var(--baseColor);
 }
@@ -132,5 +124,4 @@ body {
 //     }
 // }
 
-@media (max-width:1396px) {
-}
+@media (max-width:1396px) {}
