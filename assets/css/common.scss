@@ -162,15 +162,15 @@
 
         }
 
-        @keyframes scroll-left {
-            from {
-                margin-left: 0px;
-            }
+        // @keyframes scroll-left {
+        //     from {
+        //         margin-left: 0px;
+        //     }
 
-            to {
-                margin-left: 1500px;
-            }
-        }
+        //     to {
+        //         margin-left: 1500px;
+        //     }
+        // }
     }
 
     .scroll_middle {
@@ -185,15 +185,15 @@
             min-width: fit-content;
         }
 
-        @keyframes scroll-right {
-            from {
-                margin-left: 0px;
-            }
+        // @keyframes scroll-right {
+        //     from {
+        //         margin-left: 0px;
+        //     }
 
-            to {
-                margin-left: -1500px;
-            }
-        }
+        //     to {
+        //         margin-left: -1500px;
+        //     }
+        // }
     }
 }
 

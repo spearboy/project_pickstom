@@ -136,14 +136,6 @@
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
-@keyframes scroll-left {
-  from {
-    margin-left: 0px;
-  }
-  to {
-    margin-left: 1500px;
-  }
-}
 #slider .scroll_middle {
   display: flex;
   flex-wrap: nowrap;
@@ -155,14 +147,6 @@
   min-height: 82px;
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-@keyframes scroll-right {
-  from {
-    margin-left: 0px;
-  }
-  to {
-    margin-left: -1500px;
-  }
 }
 
 #main {
