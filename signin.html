@@ -4,108 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/signin.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
 </head>
 
 <body>
-
-    <div class="container">
-        <section id="formHolder">
-
-            <div class="row">
-
-                <!-- Brand Box -->
-                <div class="col-sm-6 brand">
-                    <a href="./index.php" class="logo"><span></span></a>
-
-                    <div class="heading">
-                        <h2>Pickstom</h2>
-                        <p>Ready to customize?</p>
-                    </div>
-
-                    <div class="success-msg">
-                        <p>이제 커스텀을 시작해보세요!</p>
-                        <a href="./index.php" class="profile">Custom Start</a>
-                    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/assets/images/logo.svg" alt="">
+                    </a>
                 </div>
-
-
-                <!-- Form Box -->
-                <div class="col-sm-6 form">
-
-                    <!-- Login Form -->
-                    <div class="login form-peice">
-                        <form class="login-form" action="#" method="post">
-                            <div class="form-group">
-                                <label for="loginemail">이메일주소</label>
-                                <input type="email" name="loginemail" id="loginemail" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="loginPassword">비밀번호</label>
-                                <input type="password" name="loginPassword" id="loginPassword" required>
-                            </div>
-
-                            <div class="CTA">
-                                <input type="submit" value="로그인">
-                                <a href="#" class="switch">새로가입할게요!</a>
-                            </div>
-                        </form>
-                    </div><!-- End Login Form -->
-
-
-                    <!-- Signup Form -->
-                    <div class="signup form-peice switched">
-                        <form class="signup-form" action="#" method="post">
-
-                            <div class="form-group">
-                                <label for="name">이름(필수)</label>
-                                <input type="text" name="username" id="name" class="name" required autocomplete="off">
-                                <span class="error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">이메일주소(필수)</label>
-                                <input type="email" name="emailAdress" id="email" class="email" required autocomplete="off">
-                                <span class="error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone">연락처(필수)</label>
-                                <input type="text" name="phone" id="phone" required autocomplete="off">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="password">비밀번호(필수)</label>
-                                <input type="password" name="password" id="password" class="pass" required autocomplete="off">
-                                <span class="error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="passwordCon">비밀번호확인(필수)</label>
-                                <input type="password" name="passwordCon" id="passwordCon" class="passConfirm" required autocomplete="off">
-                                <span class="error"></span>
-                            </div>
-
-                            <div class="CTA">
-                                <input type="submit" value="회원가입 하기" id="submit">
-                                <a href="#" class="switch">계정이있어요!</a>
-                            </div>
-                        </form>
-                    </div><!-- End Signup Form -->
+                <div class="nav">
+                    <p>소개</p>
+                    <p>커스텀</p>
+                    <p>공지사항</p>
+                    <p>FAQ</p>
+                    <a href="#">
+                        <img src="/assets/images/imgg.svg" alt="">
+                    </a>
                 </div>
             </div>
-
-        </section>
-
+        </header>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer1">문의 : rhthrck12@gmail.com<br />
+                    Copyright 2024. hyunmin, seoyeon, byunghyun All rights reserved.</div>
+                <div class="footer2">
+                    <img src="./assets/images/icon.svg" alt="">
+                </div>
+            </div>
+        </footer>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="./assets/js/signin.js"></script>
 </body>
 
 </html>
