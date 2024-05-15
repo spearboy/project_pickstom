@@ -5,44 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
     <title>signup</title>
 </head>
 
 <body>
     <div id="wrap">
-        <header id="header">
+
+        <main id="main" role="main">
             <div class="container">
-                <div class="logo">
-                    <a href="#">
-                        <img src="/assets/images/logo.svg" alt="">
-                    </a>
+                <div class="intro__text">
+                    <p>회원가입</p>
                 </div>
-                <div class="nav">
-                    <p>소개</p>
-                    <p>커스텀</p>
-                    <p>공지사항</p>
-                    <p>FAQ</p>
-                    <a href="#">
-                        <img src="/assets/images/imgg.svg" alt="">
-                    </a>
+                <div class="member__insert">
+                    <form action="signupResult.php" name="signupResult" method="post" onsubmit="return signupChecks()">
+                        <fieldset>
+                            <div>
+                                <label for="youName" class="required">이름</label>
+                                <input type="text" name="youName" id="youName" placeholder="이름을 입력해주세요."
+                                    autocomplete="off" class="input-style">
+                                <p class="msg" id="youNameComment"></p>
+                            </div>
+                            <div>
+                                <label for="youEmail" class="required">이메일</label>
+                                <div class="check">
+                                    <input type="email" name="youEmail" id="youEmail" placeholder="abc1234@abc.com"
+                                        autocomplete="off" class="input-style">
+                                    <div class="btn" onclick="emailChecking()">이메일 중복검사</div>
+                                </div>
+                                <p class="msg" id="youEmailComment"></p>
+                            </div>
+                            <div>
+                                <label for="youPass" class="required">비밀번호</label>
+                                <input type="password" name="youPass" id="youPass" placeholder="6자 이상 입력해주세요."
+                                    autocomplete="off" class="input-style">
+                                <p class="msg" id="youPassComment"></p>
+                            </div>
+                            <div>
+                                <label for="youPassC" class="required">비밀번호</label>
+                                <input type="password" name="youPassC" id="youPassC" placeholder="다시 한번 비밀번호를 적어주세요!"
+                                    autocomplete="off" class="input-style">
+                                <p class="msg" id="youPassCComment"></p>
+                            </div>
+                            <div class="center">
+                                <button type="submit" class="btn-style">회원가입</button>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
-        </header>
-        <main id="main">
-            <h1>회원가입</h1>
-            <ul>
-                <li></li>
-            </ul>
         </main>
-        <footer id="footer">
-            <div class="container">
-                <div class="footer1">문의 : rhthrck12@gmail.com<br />
-                    Copyright 2024. hyunmin, seoyeon, byunghyun All rights reserved.</div>
-                <div class="footer2">
-                    <img src="./assets/images/icon.svg" alt="">
-                </div>
-            </div>
-        </footer>
+        <!-- //main -->
+
     </div>
 </body>
 

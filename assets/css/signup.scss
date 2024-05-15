@@ -1,0 +1,31 @@
+@import url('./common.css');
+@import url(./reset.css);
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+
+    .container {
+
+
+        .intro__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin-top: 104px;
+                font-size: 24px;
+                color: var(--blackColor);
+            }
+        }
+
+        .member__insert {
+            display: flex;
+
+            label {}
+        }
+    }
+}
