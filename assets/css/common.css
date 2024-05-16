@@ -9,6 +9,7 @@
   --blackColor100: #444444;
   --blackColor200: #888888;
   --lineColor: #686866;
+  --btnColorBlue: #2460F9;
   --fontPre: "Pretendard";
 }
 
@@ -76,4 +77,83 @@
   justify-content: flex-end;
   align-items: center;
   display: flex;
+}
+
+.system_btn {
+  border-radius: 1rem;
+  color: var(--baseColor);
+  width: 135px;
+  height: 60px;
+  background-color: var(--pointColor1);
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  border: 3px solid var(--pointColor1);
+  cursor: pointer;
+  box-shadow: 0px 4px 14px rgba(116, 155, 255, 0.3215686275);
+  transition: all 0.3s ease;
+}
+.system_btn:hover {
+  border: 3px solid var(--pointColor1);
+  color: var(--pointColor1);
+  background-color: var(--baseColor);
+}
+
+.input_style {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  padding: 0px 15px;
+  width: 296px;
+  height: 48px;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+.input_style::-moz-placeholder {
+  color: #ddd;
+}
+.input_style::placeholder {
+  color: #ddd;
+}
+.input_style:focus {
+  border: 2px solid #2460F9;
+}
+
+.blueBtn {
+  border-radius: 1rem;
+  color: var(--baseColor);
+  width: 135px;
+  height: 60px;
+  background-color: var(--btnColorBlue);
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  border: 3px solid var(--btnColorBlue);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.blueBtn:hover {
+  color: var(--pointColor1);
+  background-color: var(--baseColor);
+}
+
+.whiteBtn {
+  border-radius: 1rem;
+  color: var(--pointColor1);
+  width: 135px;
+  height: 60px;
+  background-color: var(--baseColor);
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  border: 3px solid var(--btnColorBlue);
+  cursor: pointer;
+  box-shadow: 0px 4px 14px rgba(116, 155, 255, 0.3215686275);
+  transition: all 0.3s ease;
+}
+.whiteBtn:hover {
+  color: var(--baseColor);
+  background-color: var(--btnColorBlue);
 }/*# sourceMappingURL=common.css.map */
