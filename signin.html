@@ -4,12 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/signin.scss">
+    <link rel="stylesheet" href="assets/css/signin.css">
     <title>Document</title>
 </head>
 
 <body>
-
+    <main id="main" role="main">
+        <div class="container">
+            <div class="intro__text">
+                <p>로그인</p>
+            </div>
+            <div class="member__insert">
+                <form>
+                    <div>
+                        <label for="youEmail">이메일</label>
+                        <input type="text" name="youID" id="youID" autocomplete="off" class="input-style" required>
+                    </div>
+                    <div>
+                        <label for="youPass">비밀번호</label>
+                        <input type="password" name="youPass" id="youPass" autocomplete="off" class="input-style"
+                            required>
+                    </div>
+                </form>
+            </div>
+            <div id="search">
+                <div class="password-recovery">
+                    <a href="password_recovery.html">비밀번호 찾기</a>
+                </div>
+                <div class="id-recovery">
+                    <a href="id_recovery.html">비회원 주문조회</a>
+                </div>
+            </div>
+            <div class="button__group">
+                <button type="submit">로그인</button>
+                <button type="submit">회원가입</button>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

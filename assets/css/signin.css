@@ -1,0 +1,70 @@
+@import url("./reset.css");
+@import url("./common.css");
+#main {
+  width: 100%;
+  height: 100%;
+}
+#main .container .intro__text {
+  width: 296px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px auto;
+}
+#main .container .intro__text p {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--blackColor);
+  text-align: left;
+}
+#main .container .member__insert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .container .member__insert form label {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--blackColor200);
+  margin-top: 34px;
+  margin-bottom: 11px;
+}
+#main .container .member__insert form input {
+  width: 296px;
+  height: 48px;
+  border: 1px solid var(--blackColor300);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+#main .container #search {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  gap: 40px;
+}
+#main .container #search div .password-recovery,
+#main .container #search div .id-recovery {
+  display: flex;
+}
+#main .container #search div a {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: var(--blackColor100);
+  font-size: 14px;
+}
+#main .container .button__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+#main .container .button__group button {
+  width: 136px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var();
+  background-color: var;
+  margin-top: 12px;
+}/*# sourceMappingURL=signin.css.map */
