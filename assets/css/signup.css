@@ -16,4 +16,37 @@ main .container .intro__text p {
 }
 main .container .member__insert {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .member__insert form label {
+  display: flex;
+  font-size: 14px;
+  color: var(--blackColor200);
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+main .container .member__insert form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 0;
+  width: 296px;
+  height: 48px;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+main .container .member__insert form input::-moz-placeholder {
+  color: #ddd;
+}
+main .container .member__insert form input::placeholder {
+  color: #ddd;
+}
+main .container .member__insert form .center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }/*# sourceMappingURL=signup.css.map */
