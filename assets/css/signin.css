@@ -2,7 +2,9 @@
 @import url("./common.css");
 #main {
   width: 100%;
-  height: 100%;
+  min-height: calc(100vh - 156px);
+  padding-top: 96px;
+  box-sizing: border-box;
 }
 #main .container .intro__text {
   width: 296px;
@@ -22,6 +24,9 @@
   justify-content: center;
   align-items: center;
 }
+#main .container .member__insert form {
+  width: 296px;
+}
 #main .container .member__insert form label {
   display: flex;
   font-size: 14px;
@@ -29,13 +34,6 @@
   color: var(--blackColor200);
   margin-top: 34px;
   margin-bottom: 11px;
-}
-#main .container .member__insert form input {
-  width: 296px;
-  height: 48px;
-  border: 1px solid var(--blackColor300);
-  border-radius: 8px;
-  box-sizing: border-box;
 }
 #main .container #search {
   display: flex;
@@ -52,6 +50,10 @@
   text-underline-position: under;
   color: var(--blackColor100);
   font-size: 14px;
+  transition: all 0.3s ease;
+}
+#main .container #search div a:hover {
+  color: var(--buttonColor);
 }
 #main .container .button__group {
   display: flex;

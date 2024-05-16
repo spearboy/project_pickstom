@@ -9,6 +9,32 @@
 </head>
 
 <body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="/assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <p>소개</p>
+                </a>
+                <a href="#">
+                    <p>커스텀</p>
+                </a>
+                <a href="#">
+                    <p>공지사항</p>
+                </a>
+                <a href="#">
+                    <p>FAQ</p>
+                </a>
+                <a href="/signin.html">
+                    <img src="/assets/images/imgg.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
     <main id="main" role="main">
         <div class="container">
             <div class="intro__text">
@@ -18,11 +44,11 @@
                 <form>
                     <div>
                         <label for="youEmail">이메일</label>
-                        <input type="text" name="youID" id="youID" autocomplete="off" class="input-style" required>
+                        <input type="text" name="youID" id="youID" autocomplete="off" class="input_style" required>
                     </div>
                     <div>
                         <label for="youPass">비밀번호</label>
-                        <input type="password" name="youPass" id="youPass" autocomplete="off" class="input-style"
+                        <input type="password" name="youPass" id="youPass" autocomplete="off" class="input_style"
                             required>
                     </div>
                 </form>
@@ -36,11 +62,21 @@
                 </div>
             </div>
             <div class="button__group">
-                <button type="submit">로그인</button>
-                <button type="submit">회원가입</button>
+                <button type="submit" class="blueBtn">로그인</button>
+                <button type="submit" class="whiteBtn">회원가입</button>
             </div>
         </div>
     </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer1">문의 : rhthrck12@gmail.com<br />
+                Copyright 2024. hyunmin, seoyeon, byunghyun All rights reserved.</div>
+            <div class="footer2">
+                <img src="./assets/images/icon.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 
 </html>
