@@ -26,7 +26,7 @@ main .container .member__insert form label {
   margin-top: 28px;
   margin-bottom: 8px;
 }
-main .container .member__insert form input {
+main .container .member__insert form input:not(input[type=checkbox]) {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -39,10 +39,10 @@ main .container .member__insert form input {
   box-sizing: border-box;
   padding-left: 15px;
 }
-main .container .member__insert form input::-moz-placeholder {
+main .container .member__insert form input:not(input[type=checkbox])::-moz-placeholder {
   color: #ddd;
 }
-main .container .member__insert form input::placeholder {
+main .container .member__insert form input:not(input[type=checkbox])::placeholder {
   color: #ddd;
 }
 main .container .member__insert form .df {
@@ -56,34 +56,6 @@ main .container .member__insert form .df {
 }
 main .container .member__insert form .df.df1 {
   margin-top: 24px;
-}
-main .container .member__insert form .df input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
-  width: 16px;
-  height: 16px;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-}
-main .container .member__insert form .df input[type=checkbox]:checked {
-  border-color: #2460F9;
-  background-color: #2460F9;
-}
-main .container .member__insert form .df input[type=checkbox]:checked::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/check.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main .container .member__insert form .df p {
   width: 80%;
