@@ -4,6 +4,7 @@
     --pointColor1: #749bff;
     --pointColor2: #FFD362;
     --pointColor3: #FF4D4D;
+    --buttonColor: #2460f9;
 
     --baseColor: #FFF;
 
@@ -12,6 +13,7 @@
     --blackColor: #222222;
     --blackColor100: #444444;
     --blackColor200: #888888;
+    --blackColor300: #dddddd;
 
     --lineColor: #686866;
 
@@ -55,9 +57,11 @@
             align-items: center;
             display: flex;
             gap: 40px;
+
             a {
                 text-decoration: none;
                 cursor: pointer;
+
                 p {
                     color: var(--blackColor);
                 }

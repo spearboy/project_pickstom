@@ -18,39 +18,26 @@
                     <p>회원가입</p>
                 </div>
                 <div class="member__insert">
-                    <form action="signupResult.php" name="signupResult" method="post" onsubmit="return signupChecks()">
-                        <fieldset>
-                            <div>
-                                <label for="youName" class="required">이름</label>
-                                <input type="text" name="youName" id="youName" placeholder="이름을 입력해주세요."
-                                    autocomplete="off" class="input-style">
-                                <p class="msg" id="youNameComment"></p>
-                            </div>
-                            <div>
-                                <label for="youEmail" class="required">이메일</label>
-                                <div class="check">
-                                    <input type="email" name="youEmail" id="youEmail" placeholder="abc1234@abc.com"
-                                        autocomplete="off" class="input-style">
-                                    <div class="btn" onclick="emailChecking()">이메일 중복검사</div>
-                                </div>
-                                <p class="msg" id="youEmailComment"></p>
-                            </div>
-                            <div>
-                                <label for="youPass" class="required">비밀번호</label>
-                                <input type="password" name="youPass" id="youPass" placeholder="6자 이상 입력해주세요."
-                                    autocomplete="off" class="input-style">
-                                <p class="msg" id="youPassComment"></p>
-                            </div>
-                            <div>
-                                <label for="youPassC" class="required">비밀번호</label>
-                                <input type="password" name="youPassC" id="youPassC" placeholder="다시 한번 비밀번호를 적어주세요!"
-                                    autocomplete="off" class="input-style">
-                                <p class="msg" id="youPassCComment"></p>
-                            </div>
-                            <div class="center">
-                                <button type="submit" class="btn-style">회원가입</button>
-                            </div>
-                        </fieldset>
+                    <form>
+                        <div>
+                            <label for="youName">이름</label>
+                            <input type="text" placeholder="이름을 입력해주세요.">
+                        </div>
+                        <div>
+                            <label for="youEmail">이메일</label>
+                            <input type="email" placeholder="abc@abc.com">
+                        </div>
+                        <div>
+                            <label for="youPass">비밀번호</label>
+                            <input type="password" placeholder="6자 이상 입력해주세요.">
+                        </div>
+                        <div>
+                            <label for="youPass2">비밀번호 확인</label>
+                            <input type="password" placeholder="다시 한번 비밀번호를 적어주세요.">
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="btn-style">가입하기</button>
+                        </div>
                     </form>
                 </div>
             </div>
