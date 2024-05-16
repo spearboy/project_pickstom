@@ -4,41 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/signin.scss">
+    <link rel="stylesheet" href="assets/css/signin.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="wrap">
-        <header id="header">
-            <div class="container">
-                <div class="logo">
-                    <a href="#">
-                        <img src="/assets/images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="nav">
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="/assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
                     <p>소개</p>
+                </a>
+                <a href="#">
                     <p>커스텀</p>
+                </a>
+                <a href="#">
                     <p>공지사항</p>
+                </a>
+                <a href="#">
                     <p>FAQ</p>
-                    <a href="#">
-                        <img src="/assets/images/imgg.svg" alt="">
-                    </a>
+                </a>
+                <a href="/signin.html">
+                    <img src="/assets/images/imgg.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="main" role="main">
+        <div class="container">
+            <div class="intro__text">
+                <p>로그인</p>
+            </div>
+            <div class="member__insert">
+                <form>
+                    <div>
+                        <label for="youEmail">이메일</label>
+                        <input type="text" name="youID" id="youID" autocomplete="off" class="input_style" required>
+                    </div>
+                    <div>
+                        <label for="youPass">비밀번호</label>
+                        <input type="password" name="youPass" id="youPass" autocomplete="off" class="input_style"
+                            required>
+                    </div>
+                </form>
+            </div>
+            <div id="search">
+                <div class="password-recovery">
+                    <a href="password_recovery.html">비밀번호 찾기</a>
+                </div>
+                <div class="id-recovery">
+                    <a href="id_recovery.html">비회원 주문조회</a>
                 </div>
             </div>
-        </header>
-
-        <footer id="footer">
-            <div class="container">
-                <div class="footer1">문의 : rhthrck12@gmail.com<br />
-                    Copyright 2024. hyunmin, seoyeon, byunghyun All rights reserved.</div>
-                <div class="footer2">
-                    <img src="./assets/images/icon.svg" alt="">
-                </div>
+            <div class="button__group">
+                <button type="submit" class="blueBtn">로그인</button>
+                <button type="submit" class="whiteBtn">회원가입</button>
             </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer1">문의 : rhthrck12@gmail.com<br />
+                Copyright 2024. hyunmin, seoyeon, byunghyun All rights reserved.</div>
+            <div class="footer2">
+                <img src="./assets/images/icon.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 
 </html>
