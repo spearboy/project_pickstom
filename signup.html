@@ -46,20 +46,28 @@
                     <form>
                         <div>
                             <label for="youName">이름</label>
-                            <input type="text" placeholder="이름을 입력해주세요.">
+                            <input type="text" id="youName" placeholder="이름을 입력해주세요.">
+                            <span class="error_text">안녕하세요</span>
                         </div>
                         <div>
                             <label for="youEmail">이메일</label>
-                            <input type="email" placeholder="abc@abc.com">
+                            <input type="email" id="youEmail" placeholder="abc@abc.com">
+                            <span class="error_text"></span>
                         </div>
                         <div>
                             <label for="youPass">비밀번호</label>
-                            <input type="password" placeholder="6자 이상 입력해주세요.">
+                            <input type="password" id="youPass" placeholder="6자 이상 입력해주세요.">
+                            <span class="error_text"></span>
                         </div>
                         <div>
                             <label for="youPass2">비밀번호 확인</label>
-                            <input type="password" placeholder="다시 한번 비밀번호를 적어주세요.">
-
+                            <input type="password" id="youPass2" placeholder="다시 한번 비밀번호를 입력해주세요.">
+                            <span class="error_text"></span>
+                        </div>
+                        <div>
+                            <label for="youPhone">전화번호</label>
+                            <input type="text" id="youPhone" placeholder="전화번호를 입력해주세요.">
+                            <span class="error_text"></span>
                         </div>
                         <div class="df df1">
                             <input type="checkbox" name="checkbox" id="checkbox1" onclick="toggleCheckboxes(this)">
