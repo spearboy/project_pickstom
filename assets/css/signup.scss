@@ -1,0 +1,152 @@
+@import url('./common.css');
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 156px);
+    padding-top: 130px;
+
+    .container {
+
+        .intro__text {
+            width: 296px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+
+            p {
+                font-size: 24px;
+                color: var(--blackColor);
+                // margin-left: 320px;
+            }
+        }
+        .intro__text2 {
+            width: 296px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+
+            p {
+                font-size: 24px;
+                color: var(--blackColor);
+                // margin-left: 320px;
+            }
+        }
+
+        .member__insert {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            form {
+                width: 296px;
+
+                .input-container {
+                    position: relative;
+                }
+
+                .toggle-icon {
+                    position: absolute;
+                    right: 6px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: rgb(51 51 51 / 27%);
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                label {
+                    display: flex;
+                    font-size: 14px;
+                    color: var(--blackColor200);
+                    margin-top: 28px;
+                    margin-bottom: 8px;
+                }
+
+                // input:not(input[type=checkbox]) {
+                //     appearance: none;
+                //     outline: none;
+                //     border: 1px solid #ddd;
+                //     padding: 0;
+                //     width: 296px;
+                //     height: 48px;
+                //     border-radius: 0.5rem;
+                //     box-sizing: border-box;
+                //     padding-left: 15px;
+
+                //     &::placeholder {
+                //         color: #ddd;
+                //     }
+                // }
+
+                .df {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 296px;
+                    align-items: flex-start;
+                    gap: 10px 8px;
+                    margin-bottom: 14px;
+                    margin-top: 10px;
+
+                    &.df1 {
+                        margin-top: 24px;
+                    }
+
+                    p {
+                        width: 80%;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+
+                        em {
+                            color: #2460F9;
+                        }
+
+                    }
+
+                    h4 {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: var(--blackColor200);
+                        margin-left: 33px;
+                        line-height: 18px;
+
+                    }
+
+
+                }
+
+                .center {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+
+                    button {
+                        border: 0;
+                        width: 296px;
+                        height: 56px;
+                        background-color: #2460F9;
+                        border-radius: 0.5rem;
+                        font-size: 16px;
+                        color: var(--baseColor);
+                        font-weight: 600;
+                        transition: all 0.3s;
+                        margin-top: 10px;
+
+                        &:hover {
+                            background-color: var(--baseColor);
+                            color: #2460F9;
+                            border: 1px solid #2460F9;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

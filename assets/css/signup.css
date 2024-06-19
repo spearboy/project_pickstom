@@ -1,0 +1,108 @@
+@import url("./common.css");
+main {
+  width: 100%;
+  min-height: calc(100vh - 156px);
+  padding-top: 130px;
+}
+main .container .intro__text {
+  width: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+main .container .intro__text p {
+  font-size: 24px;
+  color: var(--blackColor);
+}
+main .container .intro__text2 {
+  width: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+main .container .intro__text2 p {
+  font-size: 24px;
+  color: var(--blackColor);
+}
+main .container .member__insert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .member__insert form {
+  width: 296px;
+}
+main .container .member__insert form .input-container {
+  position: relative;
+}
+main .container .member__insert form .toggle-icon {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 0.27);
+}
+main .container .member__insert form .toggle-icon:hover {
+  cursor: pointer;
+}
+main .container .member__insert form label {
+  display: flex;
+  font-size: 14px;
+  color: var(--blackColor200);
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+main .container .member__insert form .df {
+  display: flex;
+  flex-wrap: wrap;
+  width: 296px;
+  align-items: flex-start;
+  gap: 10px 8px;
+  margin-bottom: 14px;
+  margin-top: 10px;
+}
+main .container .member__insert form .df.df1 {
+  margin-top: 24px;
+}
+main .container .member__insert form .df p {
+  width: 80%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .container .member__insert form .df p em {
+  color: #2460F9;
+}
+main .container .member__insert form .df h4 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--blackColor200);
+  margin-left: 33px;
+  line-height: 18px;
+}
+main .container .member__insert form .center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+main .container .member__insert form .center button {
+  border: 0;
+  width: 296px;
+  height: 56px;
+  background-color: #2460F9;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  color: var(--baseColor);
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+main .container .member__insert form .center button:hover {
+  background-color: var(--baseColor);
+  color: #2460F9;
+  border: 1px solid #2460F9;
+}/*# sourceMappingURL=signup.css.map */

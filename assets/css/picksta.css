@@ -1,0 +1,496 @@
+@charset "UTF-8";
+.picksta_section {
+  width: 100%;
+  min-height: calc(100vh - 156px);
+  padding-top: 100px;
+}
+
+.container {
+  width: 1200px;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+}
+.container .picksta__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.container .head_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.container .head_wrapper p {
+  font-size: 26px;
+  font-weight: 600;
+}
+.container .head_wrapper .system_btn {
+  font-size: 16px;
+  /* padding: 10px; */
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.card__style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-bottom: 1px solid var(--blackColor300);
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: 1px solid var(--blackColor300);
+}
+.card .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  justify-content: space-between;
+  width: 98%;
+  position: relative;
+  border-bottom: 1px solid var(--blackColor300);
+  padding-bottom: 8px;
+}
+.card .header .prof {
+  width: 26px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 100%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.card .header .prof_name {
+  display: flex;
+  flex-direction: column;
+}
+.card .header .prof_name a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--blackColor);
+}
+.card .header .prof_name span {
+  font-size: 0.7rem;
+  margin-top: 4px;
+  color: var(--blackColor200);
+}
+.card .header .more_img {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .header .more_img img {
+  width: 20px;
+  height: 20px;
+}
+.card .header .more_img .options-menu {
+  width: 120px;
+  height: 76px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: var(--baseColor);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  text-align: center;
+}
+.card .header .more_img .options-menu p {
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.8rem;
+}
+.card .header .more_img .options-menu p:hover {
+  background: #f0f0f0;
+}
+.card .header .more_img.active .options-menu {
+  display: block;
+}
+.card__img {
+  width: calc(50% - 10px);
+  height: 388px;
+  display: block;
+  position: relative;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-right: 1px solid var(--blackColor300);
+}
+.card__img .like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.card__img .like img {
+  width: 34px;
+  height: 24px;
+  margin-right: 95px;
+  border: 0;
+}
+.card__info {
+  width: calc(50% - 10px);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.card__info div .comment-icon {
+  padding: 4px;
+}
+.card__info .comment {
+  width: 100%;
+  margin-top: 20px;
+}
+.card__info .comment p {
+  text-decoration: none;
+  line-height: 1.4;
+  color: var(--blackColor);
+  font-size: 0.9rem;
+}
+.card__info .comment .comments {
+  width: 100%;
+  height: 216px;
+  /* max-height: 340px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow: auto;
+  margin: 20px 0px;
+}
+.card__info .comment .comments .comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 6px;
+  position: relative;
+}
+.card__info .comment .comments .comment p {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  color: var(--blackColor);
+  word-break: break-all;
+}
+.card__info .comment .comments .comment p strong {
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 60px;
+  display: block;
+  padding: 2px 10px;
+  background-color: var(--pointColor1);
+  border-radius: 10px;
+  margin-top: -2px;
+  color: var(--baseColor);
+  word-break: keep-all;
+  text-align: center;
+}
+.card__info .comment .comments .comment p .comment-content {
+  display: flex;
+}
+.card__info .comment .comments .comment .date {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-size: 12px;
+  color: #aaaaaa;
+  padding-left: 70px;
+}
+.card__info .comment .comments .comment .more_img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card__info .comment .comments .comment .more_img img {
+  width: 20px;
+  height: 20px;
+}
+.card__info .comment .comments .comment .more_img .options-menu {
+  width: 120px;
+  height: 76px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: var(--baseColor);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  text-align: center;
+}
+.card__info .comment .comments .comment .more_img .options-menu p {
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.8rem;
+}
+.card__info .comment .comments .comment .more_img .options-menu p:hover {
+  background: #f0f0f0;
+}
+.card__info .comment .comments .comment .more_img.active .options-menu {
+  display: block;
+}
+.card__info .comment .comments .comment .edit-comment-textarea {
+  width: 50%;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1rem;
+  margin-right: 4px;
+}
+.card__info .comment .comments .comment .save-comment-button, .card__info .comment .comments .comment .cancel-comment-button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.card__info .comment .comments .comment .save-comment-button:hover, .card__info .comment .comments .comment .cancel-comment-button:hover {
+  background-color: #e0e0e0;
+}
+.card__info .comment form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card__info .comment form textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 38px;
+  padding: 0px 10px;
+  border: 0;
+  border-top: 1px solid var(--blackColor300);
+  color: var(--blackColor200);
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  line-height: 3;
+  overflow-y: auto;
+}
+.card__info .comment form textarea::-webkit-scrollbar {
+  visibility: hidden;
+}
+.card__info .comment form button {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: 38px; /* textarea의 높이와 일치하도록 수정 */
+  padding: 4px 10px;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--blackColor300);
+  outline: none;
+  color: var(--blackColor200);
+  cursor: pointer;
+  display: flex; /* 중앙 정렬을 위해 추가 */
+  align-items: center; /* 중앙 정렬을 위해 추가 */
+  justify-content: center; /* 중앙 정렬을 위해 추가 */
+}
+.card__info .comment form button:hover {
+  background-color: var(--blackColor300);
+  color: var(--baseColor);
+}
+.card .please_login {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.card .comment_empty {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+.card span.like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 4px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.card span.like img {
+  cursor: pointer;
+}
+
+.comment-panel {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: #f9f9f9;
+  border-left: 1px solid #ddd;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.comment-panel.open {
+  right: 0;
+}
+.comment-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.comment-panel__header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.comment-panel__header .close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.comment-panel__content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.picksta__create_inner .picksta__title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.picksta__create_inner .picksta__create {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.picksta__create_inner .picksta__create .file {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.picksta__create_inner .picksta__create .file #imageList {
+  width: 100%;
+  min-height: 370px;
+  max-height: 370px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.picksta__create_inner .picksta__create .file #imageList .image-item {
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid var(--blackColor200);
+  cursor: pointer;
+}
+.picksta__create_inner .picksta__create .file #imageList .image-item.active {
+  border-color: var(--pointColor1);
+}
+.picksta__create_inner .picksta__create .file #imageList .image-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.picksta__create_inner .picksta__create .file p {
+  width: 100%;
+  text-align: center;
+}
+.picksta__create_inner .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.picksta__create_inner #pickstaCont {
+  resize: none;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 1200px;
+}
+.picksta__create_inner button {
+  border: 0;
+  width: 130px;
+  height: 50px;
+  background-color: #2460F9;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  color: var(--baseColor);
+  font-weight: 600;
+  transition: all 0.3s;
+}/*# sourceMappingURL=picksta.css.map */

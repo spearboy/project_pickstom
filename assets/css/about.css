@@ -1,0 +1,75 @@
+@import url("./common.css");
+
+#main {
+  width: 100%;
+  min-height: calc(100vh - 156px);
+  padding-top: 150px;
+}
+
+#main .container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main .container .imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#main .container .imgbox img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+}
+
+#main .container .nav {
+  width: 86%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#main .container .nav p {
+  color: var(--blackColor);
+}
+
+#main .container .nav p:nth-child(2),
+#main .container .nav p:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+#main .container .nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .container .nav ul li {
+  width: 700px;
+  color: var(--blackColor);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.74;
+  font-family: var(--fontN);
+  margin-top: 20px;
+  text-align: center;
+}
+
+#main .container .nav ul li span.highlight {
+  color: var(--pointColor1);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=about.css.map */

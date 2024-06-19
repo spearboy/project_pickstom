@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url("./common.css");
+.mypage__wrap {
+  width: 100%;
+  min-height: calc(100vh - 156px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 56px;
+}
+.mypage__wrap .side__menu {
+  width: 260px;
+  height: 100%;
+}
+.mypage__wrap .side__menu ul {
+  margin-top: 50px;
+}
+.mypage__wrap .side__menu ul li {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.mypage__wrap .side__menu ul .active {
+  border-radius: 0 50px 50px 0;
+  transition: all 0.3s;
+  background-color: var(--pointColor1);
+  color: var(--baseColor);
+}
+.mypage__wrap .mypage_contents_wrap {
+  width: calc(100% - 260px);
+  height: 100%;
+  margin-left: 20px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile {
+  display: block;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form h2 {
+  margin: 40px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form div p {
+  width: 240px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form div label {
+  width: 240px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form div input {
+  width: 320px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .slide_pass {
+  display: flex;
+  align-items: center;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .slide_pass .input-container {
+  position: relative;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .slide_pass .toggle-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 0.27);
+  width: 30px;
+  text-align: center;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .slide_pass .toggle-icon:hover {
+  cursor: pointer;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .btn button {
+  border: 0;
+  width: 136px;
+  height: 56px;
+  background-color: #2460F9;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  color: var(--baseColor);
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-top: 80px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_profile form .btn button:hover {
+  background-color: var(--baseColor);
+  color: #2460F9;
+  border: 1px solid #2460F9;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_custom {
+  display: none;
+  margin-left: 40px;
+  width: 630px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_custom h2 {
+  margin: 40px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_custom .box_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_custom .box_wrapper .box {
+  width: 200px;
+  height: 250px;
+  border: 1px solid var(--pointColor1);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_custom .box_wrapper .box .image_box {
+  width: 180px;
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mypage__wrap .mypage_contents_wrap .mypage_custom .box_wrapper .box p {
+  color: var(--blackColor200);
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.view_mycustom_layer_bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.view_mycustom_layer_bg .view_mycustom_layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 70vh;
+  background-color: var(--baseColor);
+  border-radius: 10px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s ease;
+}
+.view_mycustom_layer_bg .view_mycustom_layer .close_mycustom_layer {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.view_mycustom_layer_bg .view_mycustom_layer .close_mycustom_layer::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  width: 20px;
+  transform-origin: center;
+  transform: rotate(45deg);
+  border-top: 2px solid var(--blackColor);
+}
+.view_mycustom_layer_bg .view_mycustom_layer .close_mycustom_layer::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  width: 20px;
+  transform-origin: center;
+  transform: rotate(-45deg);
+  border-top: 2px solid var(--blackColor);
+}
+.view_mycustom_layer_bg .view_mycustom_layer .close_mycustom_layer:hover {
+  background-color: var(--blackColor200);
+}
+.view_mycustom_layer_bg .view_mycustom_layer .view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 90px);
+  height: calc(100% - 90px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+.view_mycustom_layer_bg .view_mycustom_layer .view::after {
+  content: "다운받기";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--baseColor);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.view_mycustom_layer_bg .view_mycustom_layer .view:hover::after {
+  opacity: 1;
+}/*# sourceMappingURL=mypage.css.map */

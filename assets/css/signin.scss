@@ -1,0 +1,143 @@
+@import url('./common.css');
+
+#main {
+    width: 100%;
+    min-height: calc(100vh - 156px);
+    padding-top: 180px;
+    box-sizing: border-box;
+
+    .container {
+
+        .intro__text {
+            width: 296px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto 20px;
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--blackColor);
+                text-align: left;
+            }
+        }
+
+        .intro__text2 {
+            width: 296px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 20px auto;
+
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--blackColor);
+                text-align: left;
+            }
+        }
+
+        .member__insert {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            form {
+                width: 296px;
+
+                label {
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--blackColor200);
+                    margin-top: 34px;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+
+        .member__insert2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            form {
+                width: 296px;
+
+                label {
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--blackColor200);
+                    margin-top: 34px;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+
+        .member__insert3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            form {
+                width: 296px;
+
+                label {
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--blackColor200);
+                    margin-top: 34px;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+
+        #search {
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+            gap: 40px;
+
+            div {
+
+                .password-recovery,
+                .id-recovery {
+                    display: flex;
+                }
+
+                a {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--blackColor100);
+                    font-size: 14px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: var(--buttonColor);
+                    }
+                }
+            }
+        }
+
+        .button__group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+
+            button {
+                width: 296px;
+                height: 56px;
+                border-radius: 8px;
+                border: 1px solid var();
+                background-color: var;
+                margin-top: 12px;
+
+            }
+        }
+    }
+}

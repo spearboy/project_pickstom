@@ -1,0 +1,335 @@
+@import url("./common.css");
+.board_section {
+  width: 100%;
+  min-height: calc(100vh - 156px);
+  padding: 100px;
+}
+.board_section .board_header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.board_section .board_header .board_count {
+  margin-right: auto;
+  font-size: 14px;
+  color: #888888;
+}
+.board_section .board_header .board_search_wrapper {
+  width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.board_section .board_header .board_search_wrapper form {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.board_section .board_header .board_search_wrapper form input {
+  height: 34px;
+}
+.board_section .board_header .board_search_wrapper form button {
+  width: 120px;
+  height: 34px;
+  font-size: 16px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.board_section .board_header .board_search_wrapper form button a {
+  text-decoration: none;
+  color: var(--baseColor);
+  font-weight: 600;
+}
+.board_section .board_content {
+  width: 100%;
+  height: auto;
+}
+.board_section .board_content table {
+  width: 100%;
+  height: 100%;
+}
+.board_section .board_content table th {
+  border-bottom: 1px solid #222222;
+  padding: 16px 0px;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  line-height: 24px;
+}
+.board_section .board_content table th:nth-child(1) {
+  width: 5%;
+}
+.board_section .board_content table th:nth-child(2) {
+  width: 50%;
+}
+.board_section .board_content table th:nth-child(3) {
+  width: 20%;
+}
+.board_section .board_content table th:nth-child(4) {
+  width: 15%;
+}
+.board_section .board_content table th:nth-child(5) {
+  width: 10%;
+}
+.board_section .board_content table td {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #dddddd;
+  padding: 16px 0px;
+  text-align: center;
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+}
+.board_section .board_content table td .normal {
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--blackColor200);
+  border: 1px solid var(--blackColor300);
+}
+.board_section .board_content table td .notice {
+  font-size: 16px;
+  background-color: var(--pointColor1);
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--baseColor);
+}
+.board_section .board_content table td a {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  color: #444444;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.board_section .board_content table td a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  border-top: 1px solid #444444;
+  transition: all 0.3s ease;
+}
+.board_section .board_content table td a:hover::after {
+  width: 100%;
+}
+.board_section .board__pages {
+  margin-top: 32px;
+}
+.board_section .board__pages ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.board_section .board__pages ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #444;
+}
+.board_section .board__pages ul li.first a, .board_section .board__pages ul li.last a {
+  width: auto;
+  padding: 0 10px;
+}
+.board_section .board__pages ul li.active {
+  color: var(--btnColorBlue);
+  font-weight: 600;
+  background-color: #f3f5fd;
+  border-radius: 8px;
+}
+.board_section .board__pages ul li.active a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--btnColorBlue);
+  font-weight: 600;
+}
+.board_section .board__write .num {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.board_section .board__write .blind {
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--blackColor);
+}
+.board_section .board__write .file input {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--blackColor300);
+  padding: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: var(--blackColor200);
+}
+.board_section .board__write .file p {
+  color: var(--blackColor200);
+}
+.board_section .board__write label {
+  width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  display: block;
+  color: var(--blackColor);
+}
+.board_section .board__write .ck-editor__editable {
+  width: 100%;
+  min-height: 700px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.board_section .board__write .ck.ck-label,
+.board_section .board__write .ck-editor__top {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.board_section .board__write .ck-content {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.7;
+  border-radius: 10px !important;
+  border: 2px solid var(--blackColor300);
+  word-break: break-all;
+}
+.board_section .board__write input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 0;
+  border: 2px solid var(--blackColor300);
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.board_section .board__write textarea {
+  width: 100%;
+  height: 50vh;
+  resize: none;
+  line-height: 1.7;
+  border: 0;
+  border: 2px solid var(--blackColor300);
+  border-radius: 10px;
+  color: var(--blackColor);
+  padding: 10px;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+.board_section .board__write .btn {
+  text-align: right;
+}
+.board_section .board__write .btn button {
+  border: 0;
+  width: 130px;
+  height: 50px;
+  background-color: #2460F9;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  color: var(--baseColor);
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+.board_section .board__write .btn button:hover {
+  background-color: var(--baseColor);
+  color: #2460F9;
+  border: 1px solid #2460F9;
+}
+.board_section .board__view .board_head .title {
+  width: 100%;
+  height: 100px;
+}
+.board_section .board__view .board_head .title .top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid var(--blackColor);
+  padding-top: 18px;
+}
+.board_section .board__view .board_head .title .top span {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-size: 24px;
+  background-color: var(--pointColor1);
+  display: block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--baseColor);
+  margin-right: 16px;
+}
+.board_section .board__view .board_head .title .top h1 {
+  font-size: 24px;
+  word-break: break-all;
+}
+.board_section .board__view .board_head .title .top h1:first-child {
+  padding-left: 10px;
+}
+.board_section .board__view .board_head .title .nav {
+  display: flex;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.board_section .board__view .board_head .title .nav p {
+  margin-right: 8px;
+  font-size: 15px;
+  color: var(--blackColor300);
+}
+.board_section .board__view .board_head .title .nav p .viewImg {
+  display: inline-block;
+  background-image: url(../images/);
+}
+.board_section .board__view .board_main {
+  min-height: 600px;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 10px;
+  line-height: 1.7;
+  color: var(--blackColor100);
+  word-break: break-all;
+}
+.board_section .board__view .board_btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.board_section .board__view .board_btn a {
+  padding: 0.8rem 1.6rem;
+  background-color: #2460F9;
+  border: 1px solid #2460F9;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  color: var(--baseColor);
+  font-weight: 600;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.board_section .board__view .board_btn a:hover {
+  background-color: var(--baseColor);
+  color: #2460F9;
+  border: 1px solid #2460F9;
+}
+
+/* board__pages *//*# sourceMappingURL=board.css.map */
